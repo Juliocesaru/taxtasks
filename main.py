@@ -74,11 +74,11 @@ def calculate_provincial_tax_alberta(income):
     return provincial_tax
 
 def main():
-    income = float(input("Please enter your annual income: "))
+    income = float(input("Enter your annual income: "))
     
     federal_tax = calculate_federal_tax(income)
     
-    province = input("Please enter your province (Ontario, Quebec, Alberta): ").strip().lower()
+    province = input("Enter your province (Ontario, Quebec, Alberta): ").strip().lower()
     if province == "ontario":
         provincial_tax = calculate_provincial_tax_ontario(income)
     elif province == "quebec":
