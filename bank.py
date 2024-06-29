@@ -44,7 +44,7 @@ def create_account():
         'first_name': first_name,
         'last_name': last_name,
         'dob': dob,
-        'email': f"{first_name.lower()}.{last_name.lower()}@beautifulcanadabank.com"  # Dummy email generation
+        'email': f"{first_name.lower()}.{last_name.lower()}@mcitbank.com"  # Dummy email generation
     }
     
     # Generate account number
@@ -115,7 +115,7 @@ def remove_atm_card():
 
 # Main menu loop
 def main_menu():
-    print("Welcome to Beautiful Canada Bank Management System")
+    print("Welcome to MCIT Bank Management System")
     while True:
         print("")
         print("Choose an option:")
@@ -136,7 +136,7 @@ def main_menu():
         elif choice == 4:
             remove_atm_card()
         elif choice == 5:
-            print("Thank you for using Beautiful Canada Bank Management System.")
+            print("Thank you for using MCIT Bank Management System.")
             break
         else:
             print("Invalid choice. Please try again.")
