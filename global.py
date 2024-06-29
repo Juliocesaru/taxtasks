@@ -26,7 +26,7 @@ def main():
     
     federal_tax = calculate_tax(income, FEDERAL_BRACKETS, FEDERAL_RATES)
     
-    province = input("Please enter your province (Ontario, Quebec, Alberta): ").strip().lower()
+    province = input("Enter your province (Ontario, Quebec, Alberta): ").strip().lower()
     if province == "ontario":
         provincial_tax = calculate_tax(income, ONTARIO_BRACKETS, ONTARIO_RATES)
     elif province == "quebec":
